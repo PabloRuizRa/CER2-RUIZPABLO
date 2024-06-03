@@ -1,0 +1,22 @@
+{% extends 'core/base.html'%}
+
+{% block titulo %}{{titulo}}{% endblock %}
+{%block content %}
+
+<table class="table table-hover table-fit">
+    <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for carrera in carreras %}
+        <tr>
+            <td>{{ carrera }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+
+</table>
+
+{% endblock %}

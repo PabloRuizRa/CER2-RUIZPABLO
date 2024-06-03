@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linkeo con bootstrap CSS Y JS -->
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}" />
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}" />
+    <script href="{% static 'core/js/bootstrap.js' %}"></script>
+
+    <title>Base</title>
+</head>
+<body>
+    
+    <header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/usmproyectos/core/static/core/img/Barra Colores.png" alt="barra"></a>
+        <a class="navbar-brand" href="#"><img src="/usmproyectos/core/static/core/img/version horizontal.png" alt="logo usm"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Iniciar Sesión</a>
+            </li>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container-fluid">
+        <h1>Portal de Iniciativas Estudiantiles</h1>
+        <h3>Universidad Santa María - Sede Viña del Mar</h3>
+        <button type="button" class="btn btn-warning">Ver Iniciativas </button>
+
+    </div>
+
+
+
+    </header>
+
+
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                {% block content %}
+
+                {% endblock %}
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

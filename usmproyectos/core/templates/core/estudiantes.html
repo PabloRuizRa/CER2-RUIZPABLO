@@ -1,0 +1,39 @@
+{% extends 'core/base.html'%}
+
+{% block titulo %}{{titulo}}{% endblock %}
+{%block content %}
+
+<form action="{% url 'nuevo_proyecto' %}" method="post"> <!-- action es hacia donde voy a mandar la información, que componente en el servidor recibirá la información, por ejemplo, la vista -->
+    {% csrf_token %} <!-- formulario de Django -->
+    <div class="mb-3">
+        <label for="textId" class="form-label">Id</label>
+        <input type="text" class="form-control" id="textId" name="textId" placeholder="Número de mi proyecto">
+    </div>
+    <div class="mb-3">
+        <label for="txtNombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Nombre de mi Proyecto">
+    </div>
+    <div class="mb-3">
+        <label for="txtEstudiante" class="form-label">Estudiante</label>
+        <input type="text" class="form-control" id="txtEstudiante" name="txtEstudiante" placeholder="Mi Nombre">
+    </div>
+    <div class="mb-3">
+        <label for="txtProfesor" class="form-label">Profesor</label>
+        <input type="text" class="form-control" id="txtProfesor" name="txtProfesor" placeholder="Para gente sin profesor el predeterminado es -">
+    </div>
+    <div class="mb-3">
+        <label for="cboTema" class="form-label">Tema</label>
+        <select class="form-select" aria-label="Default select example" id="cboTema" name="cboTema">
+            <option selected>Selecciona un tema</option>
+            <option value="1">Economía</option>
+            <option value="2">Educación</option>
+            <option value="3">Social</option>
+            <option value="4">Ciencias</option>
+            <option value="5">Ecológico</option>
+            <option value="6">Innovación</option>
+        </select>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Enviar">
+</form>
+
+{% endblock %}
