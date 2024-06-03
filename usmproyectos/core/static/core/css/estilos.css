@@ -1,3 +1,14 @@
-.container-fluid{
-    background-image: url(/usmproyectos/core/static/core/img/svm.jpg);
+.navbar-nav{
+    margin-left: 160vh;
+}
+
+#imagen-portada{
+    background: url(/CER2-RUIZPABLO/usmproyectos/core/static/core/img/svm.jpg);
+}
+#portada{
+    margin-left: 10vw;
+}
+
+#login{
+    background-color: #005e90;
 }

@@ -7,9 +7,11 @@ from .models import Proyecto
 def home(request):
 
     titulo = "Proyectos Presentados"
+    proyectos = []
 
     data = {
         "titulo" : titulo,
+        "proyectos" : proyectos,
 
     }
 
@@ -38,7 +40,7 @@ def profesores(request):
 def nuevo_proyecto(request):
     if(request.POST):
 
-        id = request.POST['intID']
+        id = request.POST['textID']
         nombre = request.POST['txtNombre']
         tema = request.POST['cboTema']
         profesor = request.POST['txtProfesor']

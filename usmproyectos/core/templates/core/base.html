@@ -9,7 +9,12 @@
     <!-- Linkeo con bootstrap CSS Y JS -->
     <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}" />
     <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}" />
-    <script href="{% static 'core/js/bootstrap.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css">
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.js"></script>
+    <script src="{% static 'core/js/bootstrap.js' %}"></script>
+    <script src="{% static 'core/js/script.js' %}"></script>
 
     <title>Base</title>
 </head>
@@ -18,28 +23,32 @@
     <header>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="/usmproyectos/core/static/core/img/Barra Colores.png" alt="barra"></a>
-        <a class="navbar-brand" href="#"><img src="/usmproyectos/core/static/core/img/version horizontal.png" alt="logo usm"></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Proyectos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Iniciar Sesión</a>
-            </li>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Iniciar Sesión</a>
+                </li>
+            </div>
         </div>
-    </div>
     </nav>
 
     <div class="container-fluid">
-        <h1>Portal de Iniciativas Estudiantiles</h1>
-        <h3>Universidad Santa María - Sede Viña del Mar</h3>
-        <button type="button" class="btn btn-warning">Ver Iniciativas </button>
+        <div class="row" id="imagen-portada">
+            <div class="col" id="portada">
+                <h1>Portal de Iniciativas Estudiantiles</h1>
+                <h3>Universidad Santa María - Sede Viña del Mar</h3>
+                <button type="button" class="btn btn-warning">Ver Iniciativas </button>
+            </div>
+        </div>
 
     </div>
 
@@ -69,10 +78,11 @@
 
 
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="Login">
         <div class="row">
             <div class="col">
-                
+                <h3>Iniciar Sesión</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur aliquid tempora mollitia corrupti doloremque vero quidem dolorum adipisci nam ad tenetur illo eveniet, ab aliquam. Reiciendis est ab nemo accusamus.</p>
             </div>
 
         </div>
