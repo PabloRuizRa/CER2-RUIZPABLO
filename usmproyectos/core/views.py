@@ -40,7 +40,7 @@ def profesores(request):
 def nuevo_proyecto(request):
     if(request.POST):
 
-        id = request.POST['textID']
+        id = request.POST['textId']
         nombre = request.POST['txtNombre']
         tema = request.POST['cboTema']
         profesor = request.POST['txtProfesor']
